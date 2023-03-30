@@ -1,0 +1,8 @@
+prefix=/home/nk/TensorrtDetect/install
+
+Name: yolov5_zed
+Description: Description of yolov5_zed
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: message_runtime
