@@ -67,14 +67,14 @@ set(yolov5_zed_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
-  set(yolov5_zed_SOURCE_PREFIX /home/nk/TensorrtDetect/src/tensorrrtdetect)
-  set(yolov5_zed_DEVEL_PREFIX /home/nk/TensorrtDetect/devel)
+  set(yolov5_zed_SOURCE_PREFIX /home/nk/tensorrt-ros-Detect/src/tensorrrtdetect)
+  set(yolov5_zed_DEVEL_PREFIX /home/nk/tensorrt-ros-Detect/devel)
   set(yolov5_zed_INSTALL_PREFIX "")
   set(yolov5_zed_PREFIX ${yolov5_zed_DEVEL_PREFIX})
 else()
   set(yolov5_zed_SOURCE_PREFIX "")
   set(yolov5_zed_DEVEL_PREFIX "")
-  set(yolov5_zed_INSTALL_PREFIX /home/nk/TensorrtDetect/install)
+  set(yolov5_zed_INSTALL_PREFIX /home/nk/tensorrt-ros-Detect/install)
   set(yolov5_zed_PREFIX ${yolov5_zed_INSTALL_PREFIX})
 endif()
 
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/nk/TensorrtDetect/install/lib;/home/nk/TensorrtDetect/devel/lib;/opt/ros/noetic/lib)
+    foreach(path /home/nk/tensorrt-ros-Detect/install/lib;/opt/ros/noetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

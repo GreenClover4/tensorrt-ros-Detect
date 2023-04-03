@@ -1,4 +1,4 @@
-prefix=/home/nk/TensorrtDetect/devel
+prefix=/home/nk/tensorrt-ros-Detect/devel
 
 Name: yolov5_zed
 Description: Description of yolov5_zed

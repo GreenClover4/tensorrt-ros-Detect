@@ -1,2 +1,2 @@
 - setup-file:
-    local-name: /home/nk/TensorrtDetect/devel/setup.sh
+    local-name: /home/nk/tensorrt-ros-Detect/devel/setup.sh

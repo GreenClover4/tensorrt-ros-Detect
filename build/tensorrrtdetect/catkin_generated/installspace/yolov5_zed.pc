@@ -1,4 +1,4 @@
-prefix=/home/nk/TensorrtDetect/install
+prefix=/home/nk/tensorrt-ros-Detect/install
 
 Name: yolov5_zed
 Description: Description of yolov5_zed
